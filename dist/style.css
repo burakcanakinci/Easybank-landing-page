@@ -83,6 +83,10 @@ button, .button {
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .header__menu > span:not(:last-child) {
