@@ -96,6 +96,10 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0px;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
@@ -287,5 +291,22 @@ button, .button {
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-weight: 300;
+  font-size: 2.31rem;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=style.css.map */
