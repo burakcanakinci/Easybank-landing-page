@@ -105,8 +105,10 @@ a, a:visited, a:hover {
 }
 
 .container {
-  padding-left: 1.5rem;
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -134,6 +136,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
@@ -142,6 +145,13 @@ button, .button {
   cursor: pointer;
   color: white;
   font-weight: 400;
+  font-size: 0.875rem;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+button:hover, .button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -260,17 +270,6 @@ button, .button {
 
 .header__links a:hover::before {
   opacity: 1;
-}
-
-.header__cta {
-  font-size: 0.875rem;
-  color: white;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.header__cta:hover {
-  opacity: 0.75;
 }
 
 .hero__image {
