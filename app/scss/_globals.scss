@@ -14,6 +14,10 @@ body {
     font-size: $font-med;
     color: $grayishBlue;
     line-height: 1.3;
+
+    @include breakpoint-up(large) {
+        font-size: $font-lg;
+    }
     
     &.noscroll {
         overflow: hidden;
@@ -31,10 +35,35 @@ a, a:visited, a:hover {
 // Spacing
 
 .container {
-    padding-top: 2.25rem;
-    padding-right: 1.5rem;
-    padding-bottom: 2.25rem;
-    padding-left: 1.5rem;
+    max-width: 69.375rem;
+    margin: 0 auto;
+
+    &--pall{
+        padding-top: 2.25rem;
+        padding-bottom: 2.25;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    &--py {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25;
+    }
+    &--px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    &--pt {
+        padding-top: 2.25rem;
+    }
+    &--pr {
+        padding-right: 1.5rem;
+    }
+    &--pb {
+        padding-bottom: 2.25rem;
+    }
+    &--pl {
+        padding-left: 1.5rem;
+    }
 }
 
 // Flexbox

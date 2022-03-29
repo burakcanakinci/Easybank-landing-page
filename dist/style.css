@@ -92,6 +92,12 @@ body {
   line-height: 1.3;
 }
 
+@media (min-width: 64em) {
+  body {
+    font-size: 1.24rem;
+  }
+}
+
 body.noscroll {
   overflow: hidden;
 }
@@ -105,9 +111,40 @@ a, a:visited, a:hover {
 }
 
 .container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+.container--pall {
   padding-top: 2.25rem;
+  padding-bottom: 2.25;
+  padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.container--py {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25;
+}
+
+.container--px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container--pt {
+  padding-top: 2.25rem;
+}
+
+.container--pr {
+  padding-right: 1.5rem;
+}
+
+.container--pb {
   padding-bottom: 2.25rem;
+}
+
+.container--pl {
   padding-left: 1.5rem;
 }
 
@@ -272,6 +309,17 @@ button:hover, .button:hover {
   opacity: 1;
 }
 
+@media (min-width: 64em) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .hero__image {
   position: relative;
   background-image: url("/images/bg-intro-mobile.svg");
@@ -279,6 +327,20 @@ button:hover, .button:hover {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 17.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__image {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 41rem;
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-position: left center;
+  }
 }
 
 .hero__image::before {
@@ -296,12 +358,30 @@ button:hover, .button:hover {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .hero__text {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+}
+
 .hero__text h1 {
   font-weight: 300;
   font-size: 2.31rem;
   line-height: 1.15;
   color: #2d314d;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  .hero__text h1 {
+    font-size: 3.25rem;
+  }
 }
 
 .hero__text p {
